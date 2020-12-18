@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="SuelasUnionPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>DTO.PedidoProveedor</class>
+    <class>DTO.DevolucionProveedor</class>
+    <class>DTO.Tipo</class>
+    <class>DTO.DevolucionProveedorProducto</class>
+    <class>DTO.Suela</class>
+    <class>DTO.TipoCliente</class>
+    <class>DTO.Producto</class>
+    <class>DTO.Salpa</class>
+    <class>DTO.ProductoPedidoProveedor</class>
+    <class>DTO.Servicio</class>
+    <class>DTO.Proveedor</class>
+    <class>DTO.PedidoDeVenta</class>
+    <class>DTO.Color</class>
+    <class>DTO.Cliente</class>
+    <class>DTO.Tira</class>
+    <class>DTO.DevolucionClienteProducto</class>
+    <class>DTO.TipoEntrega</class>
+    <class>DTO.Rol</class>
+    <class>DTO.Plantilla</class>
+    <class>DTO.ProductoPedidoVenta</class>
+    <class>DTO.Estado</class>
+    <class>DTO.DevolucionCliente</class>
+    <class>DTO.Personal</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://db-suelas.ckwk5zhyovzu.us-east-1.rds.amazonaws.com:3306/suelas?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="admin"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="admin123"/>
+    </properties>
+  </persistence-unit>
+</persistence>
